@@ -4,14 +4,20 @@
   padding: 2rem;
   text-align: center;
 }
-
+body{
+  background-image: url(./assets/pexels-ming-hsi-hsieh-18276986.jpg);
+  background-size: cover;
+  background-position: center center;
+  
+}
 input{
   padding: 5px;
   border-radius: 10px;
   border:transparent;
   margin: 10px;
   color: #f8f6f6;
-  
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
 }
 input:hover{
 
@@ -34,7 +40,16 @@ input:hover{
 }
 
 .card {
-  padding: 2em;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+ 
+
 }
 
 .read-the-docs {

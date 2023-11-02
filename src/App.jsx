@@ -19,9 +19,10 @@ function App() {
       if (withoutSpaces.length > 3) {
         setShow(true)
         setError(false)
+        return true
       } else {
         setError(true)
-        setError(false)
+        return false
       }
       };
 
@@ -30,9 +31,10 @@ function App() {
         if (password.length > 6) {
           setShow(true)
           setError(false)
+          return true
         } else {
           setError(true)
-          setError(false)
+          return false
         }
         };
 
@@ -46,8 +48,9 @@ function App() {
 
     if (!isPasswordValid || !isUsernameValid) {
       setError(true)
+      setShow(false)
       } else {
-      
+      setError(false)
       setShow(true)
       }
 
@@ -67,10 +70,10 @@ function App() {
       <button type="submit">Enviar</button>
       
       </form>
-      {show && <Card/>}
+      
       
       {error && <h3 style={{color: 'red'}}>Por favor chequea que la información sea correcta</h3>}
-      
+      {show && <Card/>}
       
     </div>
 

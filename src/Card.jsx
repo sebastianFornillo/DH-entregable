@@ -1,9 +1,9 @@
 
 
-const Card = (estudiante) => {
+const Card = () => {
   return(
-    <div>
-   <h3>Perfecto, {estudiante}!</h3>
+    <div className="card">
+   <h3>Perfecto!</h3>
   <h4>Ya estamos enviando el formulario.</h4>
   </div>
 )};
