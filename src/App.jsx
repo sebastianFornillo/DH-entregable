@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <h1>Carga de estudiantes</h1>
-      {!show && 
+      
       <form onSubmit={handleSumbit} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <label>Estudiante</label>
       <input type="text" placeholder="Nombre de estudiante" value={estudiante} onChange={onChangeUserName} />
@@ -66,8 +66,9 @@ function App() {
 
       <button type="submit">Enviar</button>
       
-      </form>}
+      </form>
       {show && <Card/>}
+      
       {error && <h3 style={{color: 'red'}}>Por favor chequea que la información sea correcta</h3>}
       
       
