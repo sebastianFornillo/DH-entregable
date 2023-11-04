@@ -1,6 +1,7 @@
+
+import { useState } from "react";
 import Card from "./Card";
 import './App.css'
-import { useState } from "react";
 
 function App() {
   const [estudiante, setEstudiante] = useState("") 
@@ -73,7 +74,7 @@ function App() {
       
       
       {error && <h3 style={{color: 'red'}}>Por favor chequea que la información sea correcta</h3>}
-      {show && <Card/>}
+      {show && <Card estudiante={estudiante}/>}
       
     </div>
 

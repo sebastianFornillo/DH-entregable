@@ -1,10 +1,10 @@
 
+const Card = ({estudiante}) => {
 
-const Card = () => {
   return(
     <div className="card">
-   <h3>Perfecto!</h3>
-  <h4>Ya estamos enviando el formulario.</h4>
+   <h3>Muchas gracias {estudiante}!! </h3>
+  <h4 style={{color: 'green'}}> El formulario de inscripcion al programa amazonas se ha enviando con exito.</h4>
   </div>
 )};
 
